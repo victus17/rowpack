@@ -5,13 +5,21 @@ updates:
     schedule:
       interval: weekly
       day: monday
+    cooldown:
+      default-days: 3
     groups:
       development-dependencies:
         dependency-type: development
+    ignore:
+      - dependency-name: typescript
+        update-types:
+          - version-update:semver-major
     open-pull-requests-limit: 5
 
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: monthly
+    cooldown:
+      default-days: 3
     open-pull-requests-limit: 3
