@@ -37,7 +37,8 @@ jobs:
           mkdir -p release
           pnpm pack --pack-destination release
           cp dist/demo/index.html release/rowpack-demo.html
-          shasum -a 256 release/* > release/SHA256SUMS.txt
+          cd release
+          shasum -a 256 rowpack-*.tgz rowpack-demo.html > SHA256SUMS.txt
 
       - name: Create GitHub release
         env:
