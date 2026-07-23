@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Rowpack</title>
+  <rect width="64" height="64" rx="16" fill="#20221e"/>
+  <g fill="#b6ef4a" transform="skewY(-24)">
+    <rect x="17" y="17" width="30" height="8" rx="2"/>
+    <rect x="17" y="29" width="30" height="8" rx="2"/>
+    <rect x="17" y="41" width="30" height="8" rx="2"/>
+  </g>
+</svg>

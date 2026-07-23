@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and ideas
+    url: https://github.com/victus17/rowpack/discussions
+    about: Start a discussion before proposing a large change.
+  - name: Security vulnerability
+    url: https://github.com/victus17/rowpack/security/advisories/new
+    about: Report vulnerabilities privately.

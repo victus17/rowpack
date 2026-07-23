@@ -1,0 +1,89 @@
+{
+  "name": "rowpack",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Turn tabular data into a self-contained, editable HTML app.",
+  "keywords": [
+    "airtable",
+    "csv",
+    "database",
+    "html",
+    "local-first",
+    "offline",
+    "single-file",
+    "spreadsheet"
+  ],
+  "homepage": "https://github.com/victus17/rowpack#readme",
+  "bugs": {
+    "url": "https://github.com/victus17/rowpack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victus17/rowpack.git"
+  },
+  "license": "MIT",
+  "author": "victus17",
+  "type": "module",
+  "bin": {
+    "rowpack": "./dist/cli/index.js"
+  },
+  "files": [
+    "dist/cli",
+    "dist/runtime",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "pnpm build:runtime && pnpm build:cli && pnpm build:demo",
+    "build:runtime": "vite build",
+    "build:cli": "tsup",
+    "build:demo": "node dist/cli/index.js examples/launch-tracker.csv --title \"Launch tracker\" --view kanban --group-by Status --output dist/demo/index.html",
+    "check": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm test:e2e",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "prepack": "pnpm build",
+    "typecheck": "tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "commander": "15.0.0",
+    "lucide-preact": "1.25.0",
+    "nanoid": "6.0.0",
+    "papaparse": "5.5.4",
+    "picocolors": "1.1.1",
+    "preact": "10.29.7",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.12.1",
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.61.1",
+    "@preact/preset-vite": "2.10.6",
+    "@types/node": "26.1.1",
+    "@types/papaparse": "5.5.2",
+    "@vitest/coverage-v8": "4.1.10",
+    "eslint": "10.7.0",
+    "happy-dom": "20.11.1",
+    "playwright": "1.61.1",
+    "prettier": "3.9.6",
+    "tsup": "8.5.1",
+    "tsx": "4.23.1",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.65.0",
+    "vite": "8.1.5",
+    "vite-plugin-singlefile": "2.3.3",
+    "vitest": "4.1.10"
+  }
+}

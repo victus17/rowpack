@@ -1,0 +1,9 @@
+Task,Status,Priority,Owner,Due,Notes
+Polish the launch demo,In progress,High,Maya,2026-07-24,Keep the first run under ten seconds.
+Record the README loop,Review,High,Leon,2026-07-25,CSV to app to edit to save.
+Write Show HN post,Backlog,Medium,Nora,2026-07-26,"Lead with the artifact, not the stack."
+Verify offline save,Done,High,Maya,2026-07-23,"Chrome, Safari and Firefox fallback."
+Prepare inventory example,Backlog,Low,Owen,2026-07-28,"Use recognisable, realistic sample data."
+Tighten keyboard flow,In progress,Medium,Leon,2026-07-24,Focus states should feel intentional.
+Publish signed checksums,Backlog,Medium,Nora,2026-07-29,Make verification obvious.
+Draft launch thread,Review,Low,Owen,2026-07-27,One idea per post.

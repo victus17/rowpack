@@ -1,0 +1,8 @@
+allowBuilds:
+  esbuild: true
+engineStrict: true
+nodeVersion: 24.14.0
+overrides:
+  esbuild: 0.28.1
+savePrefix: ""
+strictPeerDependencies: true

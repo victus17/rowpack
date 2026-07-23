@@ -1,0 +1,6 @@
+Item,Category,Stock,Reorder,Location,Supplier URL
+USB-C cable,Accessories,84,20,A-01,https://example.com/suppliers/northstar
+Mechanical keyboard,Hardware,12,8,B-04,https://example.com/suppliers/keystone
+Notebook,Stationery,143,40,C-02,https://example.com/suppliers/paperwork
+27-inch display,Hardware,7,5,B-08,https://example.com/suppliers/lumina
+Desk lamp,Office,23,10,D-03,https://example.com/suppliers/lumina
