@@ -28,13 +28,19 @@ No account. No database. No telemetry. No runtime network requests.
 
 ## Quick start
 
-Install the signed release package directly from GitHub:
+Run the signed release directly from GitHub:
+
+```bash
+pnpm dlx https://github.com/victus17/rowpack/releases/download/v0.1.0/rowpack-0.1.0.tgz customers.csv
+```
+
+Or install the CLI globally:
 
 ```bash
 npm install --global https://github.com/victus17/rowpack/releases/download/v0.1.0/rowpack-0.1.0.tgz
 ```
 
-Pack a spreadsheet export:
+Then pack any spreadsheet export:
 
 ```bash
 rowpack customers.csv
